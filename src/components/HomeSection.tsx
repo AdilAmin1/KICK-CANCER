@@ -38,10 +38,10 @@ export default function HomeSection({ scrollToSection }: HomeSectionProps) {
             className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-neutral-900 leading-tight animate-fade-in"
           >
             <span className="relative inline-block">
-              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 via-amber-500 to-amber-600">
+              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 via-yellow-550 to-yellow-600">
                 K.I.C.K. Cancer
               </span>
-              <span className="absolute left-0 right-0 bottom-2 h-4 bg-amber-400/25 -rotate-1 z-0 rounded-sm" />
+              <span className="absolute left-0 right-0 bottom-2 h-4 bg-yellow-400/30 -rotate-1 z-0 rounded-sm" />
             </span>
           </motion.h1>
 
@@ -53,12 +53,12 @@ export default function HomeSection({ scrollToSection }: HomeSectionProps) {
             className="pt-4 max-w-2xl mx-auto flex flex-col items-center justify-center"
           >
             <p className="font-serif italic text-2xl sm:text-3xl text-neutral-700 leading-relaxed py-3">
-              Kicking Cancer as a Community.
+              Our Shared Mission.
             </p>
             <div className="flex justify-center items-center gap-2 mt-2">
-              <span className="h-0.5 w-8 bg-amber-400 rounded-sm" />
-              <Heart className="w-4 h-4 text-amber-500 fill-amber-500 animate-pulse" />
-              <span className="h-0.5 w-8 bg-amber-400 rounded-sm" />
+              <span className="h-0.5 w-8 bg-yellow-400 rounded-sm" />
+              <Heart className="w-4 h-4 text-yellow-500 fill-yellow-500 animate-pulse" />
+              <span className="h-0.5 w-8 bg-yellow-400 rounded-sm" />
             </div>
           </motion.div>
         </div>
@@ -72,7 +72,7 @@ export default function HomeSection({ scrollToSection }: HomeSectionProps) {
         >
           <button
             onClick={() => scrollToSection('information')}
-            className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold bg-amber-400 text-neutral-950 transition-all hover:bg-amber-300 active:scale-98 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
+            className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold bg-yellow-400 text-neutral-950 transition-all hover:bg-yellow-350 active:scale-98 shadow-md flex items-center justify-center gap-2 group cursor-pointer"
           >
             Learn & Live
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -81,13 +81,13 @@ export default function HomeSection({ scrollToSection }: HomeSectionProps) {
             onClick={() => scrollToSection('about')}
             className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold bg-white text-neutral-900 border border-neutral-200 transition-all hover:bg-neutral-50 hover:border-neutral-300 active:scale-98 cursor-pointer"
           >
-            About & Team
+            Our Shared Mission
           </button>
         </motion.div>
       </section>
 
       {/* Styled Ribbon Banner */}
-      <section className="relative overflow-hidden rounded-3xl yellow-gradient bg-amber-400 text-neutral-950 p-8 sm:p-12 mx-4 sm:mx-6 lg:mx-8 yellow-glow">
+      <section className="relative overflow-hidden rounded-3xl yellow-gradient bg-yellow-400 text-neutral-950 p-8 sm:p-12 mx-4 sm:mx-6 lg:mx-8 yellow-glow">
         <div className="absolute right-0 top-0 bottom-0 opacity-10 pointer-events-none translate-x-12 translate-y-12 scale-150">
           <Award className="w-96 h-96" />
         </div>
@@ -102,16 +102,12 @@ export default function HomeSection({ scrollToSection }: HomeSectionProps) {
       {/* Centered K.I.C.K. Acronym Display */}
       <section className="px-4 sm:px-6 max-w-4xl mx-auto">
         <div className="bg-white border border-neutral-150 rounded-3xl p-10 sm:p-14 text-center space-y-4 shadow-xs relative overflow-hidden flex flex-col items-center justify-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-amber-500">What K.I.C.K. Stands For</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-neutral-900">
+            What K.I.C.K. Stands For
+          </h2>
           
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 pt-2">
-            <span className="text-6xl sm:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-neutral-950 to-amber-500 select-none tracking-tight">
-              K.I.C.K.
-            </span>
-            <div className="hidden md:block w-px h-14 bg-neutral-200" />
-            <span className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-neutral-900 tracking-tight capitalize">
-              Kids in chemo kits
-            </span>
+          <div className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-600 tracking-wide capitalize pt-2">
+            Kids in chemo kits
           </div>
         </div>
       </section>
@@ -119,7 +115,7 @@ export default function HomeSection({ scrollToSection }: HomeSectionProps) {
       {/* Prominent Bottom Quote Display */}
       <section className="text-center pt-12 pb-4">
         <p className="font-serif italic text-3xl sm:text-4xl text-neutral-800 leading-relaxed font-semibold">
-          Kicking Cancer as a Community.
+          Our Shared Mission.
         </p>
         <p className="text-[11px] font-bold uppercase tracking-widest text-neutral-400 mt-3 flex items-center justify-center gap-1.5">
           <span>Our Shared Mission</span>

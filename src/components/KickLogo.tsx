@@ -7,7 +7,7 @@ interface KickLogoProps {
   style?: React.CSSProperties;
 }
 
-export default function KickLogo({ fillColor = '#171717', ribbonColor = '#f59e0b', ...props }: KickLogoProps) {
+export default function KickLogo({ fillColor = '#171717', ribbonColor = '#eab308', ...props }: KickLogoProps) {
   return (
     <svg 
       viewBox="0 0 240 80" 

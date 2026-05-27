@@ -14,7 +14,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
 
   const navItems: { id: TabType; label: string; desc: string }[] = [
     { id: 'home', label: 'Home', desc: 'Welcome page & core mission' },
-    { id: 'about', label: 'About Us', desc: 'Who we are and our background' },
+    { id: 'about', label: 'Our Shared Mission', desc: 'Who we are and our background' },
     { id: 'information', label: 'Information', desc: 'Childhood cancer information resources' },
     { id: 'volunteer', label: 'Volunteer', desc: 'Dedicate your time & get involved' },
   ];
@@ -50,12 +50,12 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
               className="flex items-center gap-2 px-3 py-2 -ml-3 rounded-xl hover:bg-neutral-50 active:bg-neutral-100 transition-all text-left focus:outline-hidden group cursor-pointer select-none"
             >
               <div className="flex flex-col">
-                <span className="text-xs font-bold text-amber-500 uppercase tracking-wider leading-none mb-0.5">
+                <span className="text-xs font-bold text-yellow-500 uppercase tracking-wider leading-none mb-0.5">
                   Section
                 </span>
                 <span className="text-xl sm:text-2xl font-black text-neutral-950 tracking-tight flex items-center gap-1.5 leading-none">
                   {activeItem.label}
-                  <ChevronDown className={`w-5 h-5 text-neutral-400 group-hover:text-amber-500 transition-transform duration-250 ${dropdownOpen ? 'rotate-180 text-amber-500' : ''}`} />
+                  <ChevronDown className={`w-5 h-5 text-neutral-400 group-hover:text-yellow-500 transition-transform duration-250 ${dropdownOpen ? 'rotate-180 text-yellow-500' : ''}`} />
                 </span>
               </div>
             </button>
@@ -72,7 +72,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
                 <div className="absolute left-0 mt-3 w-72 rounded-2xl bg-white border border-neutral-150 shadow-xl py-2.5 z-50 animate-fade-in origin-top-left overflow-hidden">
                   <div className="px-4 py-2 border-b border-neutral-50 flex items-center justify-between bg-neutral-50/50">
                     <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">Navigation Menu</span>
-                    <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                    <Sparkles className="w-3.5 h-3.5 text-yellow-500" />
                   </div>
                   <div className="p-1 px-2 space-y-1">
                     {navItems.map((item) => {
@@ -87,14 +87,14 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
                           }}
                           className={`w-full text-left px-3 py-2.5 rounded-xl flex flex-col transition-all cursor-pointer ${
                             isActive
-                              ? 'bg-amber-400/10 text-neutral-950 border border-amber-400/20'
+                              ? 'bg-yellow-400/15 text-neutral-950 border border-yellow-400/35'
                               : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-50 border border-transparent'
                           }`}
                         >
                           <div className="flex items-center justify-between w-full">
                             <span className="font-extrabold text-sm">{item.label}</span>
                             {isActive && (
-                              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                              <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse" />
                             )}
                           </div>
                           <span className="text-[11px] text-neutral-400 group-hover:text-neutral-500 font-normal leading-normal mt-0.5">
@@ -119,11 +119,11 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
               <span className="text-[17px] font-black uppercase tracking-wider text-neutral-950 text-right">
                 K.I.C.K
               </span>
-              <span className="text-[14px] font-bold uppercase tracking-widest text-amber-500 text-right">
+              <span className="text-[14px] font-bold uppercase tracking-widest text-yellow-550 text-right">
                 CANCER
               </span>
             </div>
-            <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-neutral-200 group-hover:border-amber-400 transition-colors bg-white flex items-center justify-center p-1 shrink-0 shadow-xs">
+            <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-neutral-200 group-hover:border-yellow-400 transition-colors bg-white flex items-center justify-center p-1 shrink-0 shadow-xs">
               <KickLogo className="w-full h-full" fillColor="#171717" ribbonColor="#eab308" />
             </div>
           </button>

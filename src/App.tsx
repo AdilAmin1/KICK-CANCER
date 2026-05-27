@@ -82,11 +82,11 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-neutral-50/40 text-neutral-900 selection:bg-amber-300 selection:text-neutral-950 relative">
+    <div className="min-h-screen flex flex-col bg-neutral-50/40 text-neutral-900 selection:bg-yellow-200 selection:text-neutral-950 relative">
       
       {/* 4. Top Scroll progress loading bar */}
       <div 
-        className="fixed top-0 left-0 h-1.5 bg-gradient-to-r from-amber-400 to-yellow-500 z-[9999] transition-all duration-75 ease-out"
+        className="fixed top-0 left-0 h-1.5 bg-gradient-to-r from-yellow-300 to-yellow-500 z-[9999] transition-all duration-75 ease-out"
         style={{ width: `${scrollProgress}%` }}
       />
 
