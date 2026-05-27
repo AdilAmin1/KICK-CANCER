@@ -1,0 +1,6 @@
+{
+  "name": "Kick Cancer",
+  "description": "Kicking cancer as a community. A minimalist platform raising awareness, sharing information, and building a supportive environment for children fighting cancer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
